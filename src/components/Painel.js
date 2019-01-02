@@ -4,8 +4,20 @@ import {
     View
 } from 'react-native';
 
-export default props => (
-    <View>
-        <Text>Painel</Text>
-    </View>
-);
+export default class Painel extends React.Component {
+    render() {
+        return (
+            <View>
+                <Text>Painel</Text>
+            </View>
+        );
+    }
+}
+
+// const Painel = props => (
+//     <View>
+//         <Text>Painel</Text>
+//     </View>
+// );
+
+// export {Painel};

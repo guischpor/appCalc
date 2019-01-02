@@ -1,10 +1,12 @@
 import React from 'react';
 import { AppRegistry } from 'react-native';
 
-import App from './src/App';
+import AppCalc from './src/AppCalc';
 
-const appCalc = () => (
-  <App />
-);
-
-AppRegistry.registerComponent('appCalc', () => appCalc);
+export default class App extends React.Component {
+  render() {
+      return (
+        <AppCalc />
+      );
+  }
+}

@@ -4,8 +4,22 @@ import {
     View
 } from 'react-native';
 
-export default props => (
-    <View>
-        <Text>Topo</Text>
-    </View>
-);
+import Cabecalho from './Cabecalho';
+
+export default class Topo extends React.Component {
+    render() {
+        return (
+            <View>
+                <Cabecalho />
+            </View>
+        );
+    }
+}
+
+// const Topo = props => (
+//     <View>
+//         <Text>Topo</Text>
+//     </View>
+// );
+
+// export {Topo};

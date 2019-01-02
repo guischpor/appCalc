@@ -4,8 +4,20 @@ import {
     View
 } from 'react-native';
 
-export default props => (
-    <View>
-        <Text>Resultado</Text>
-    </View>
-);
+export default class Resultado extends React.Component {
+    render() {
+        return (
+            <View>
+                <Text>Resultado</Text>
+            </View>
+        );
+    }
+}
+
+// const Resultado = props => (
+//     <View>
+//         <Text>Resultado</Text>
+//     </View>
+// );
+
+// export {Resultado};
