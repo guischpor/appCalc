@@ -4,11 +4,13 @@ import {
     View
 } from 'react-native';
 
+import Visor from './Visor';
+
 export default class Resultado extends React.Component {
     render() {
         return (
             <View>
-                <Text>Resultado</Text>
+                <Visor />
             </View>
         );
     }

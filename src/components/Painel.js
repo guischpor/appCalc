@@ -4,11 +4,17 @@ import {
     View
 } from 'react-native';
 
+import Entrada from './Entrada';
+import Operacao from './Operacao';
+import Comando from './Comando';
+
 export default class Painel extends React.Component {
     render() {
         return (
             <View>
-                <Text>Painel</Text>
+                <Entrada />
+                <Operacao />
+                <Comando />
             </View>
         );
     }
