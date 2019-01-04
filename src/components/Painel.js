@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-    Text,
     View
 } from 'react-native';
 
@@ -9,21 +8,31 @@ import Operacao from './Operacao';
 import Comando from './Comando';
 
 export default class Painel extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            num1: '',
+            num2: '',
+
+        };
+    };
+
+    calcular() {
+        console.log("Sim, vamos calcular...");
+    }
+
     render() {
         return (
             <View>
-                <Entrada />
+                <Entrada
+                    num1={this.state.num1}
+                    num2={this.state.num2}
+                />
                 <Operacao />
-                <Comando />
+                <Comando
+                    acao={this.calcular}
+                />
             </View>
         );
     }
 }
-
-// const Painel = props => (
-//     <View>
-//         <Text>Painel</Text>
-//     </View>
-// );
-
-// export {Painel};

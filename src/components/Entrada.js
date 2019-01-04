@@ -11,8 +11,12 @@ export default class Entrada extends React.Component {
     render() {
         return (
             <View style={styles.viewContainer}>
-                <Numero />
-                <Numero />
+                <Numero
+                    num={this.props.num1}
+                />
+                <Numero
+                    num={this.props.num2}
+                />
             </View>
         );
     }

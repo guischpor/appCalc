@@ -20,11 +20,3 @@ export default class AppCalc extends React.Component {
         );
     }
 }
-
-// export default props => (
-//     <View>
-//         <Topo />
-//         <Resultado />
-//         <Painel />
-//     </View>
-// );

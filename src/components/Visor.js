@@ -7,6 +7,13 @@ import {
 } from 'react-native';
 
 export default class Visor extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state ={
+            resultado: '',
+        };
+    };
+
     render() {
         return (
             <View>
@@ -14,13 +21,14 @@ export default class Visor extends React.Component {
                     placeholder='Resultado'
                     editable={false}
                     style={styles.txtInput}
+                    value={this.state.resultado}
                 />
             </View>
         );
     }
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create ({
 
     txtInput: {
         fontSize: 30,

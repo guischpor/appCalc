@@ -12,6 +12,7 @@ export default class Numero extends React.Component {
             <View style={styles.backgroundView}>
                 <TextInput
                     style={styles.numero}
+                    value={this.props.num}
                 />
             </View>
         );
