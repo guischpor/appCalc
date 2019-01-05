@@ -8,29 +8,20 @@ import Operacao from './Operacao';
 import Comando from './Comando';
 
 export default class Painel extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            num1: '',
-            num2: '',
-
-        };
-    };
-
-    calcular() {
-        console.log("Sim, vamos calcular...");
-    }
-
     render() {
         return (
             <View>
                 <Entrada
-                    num1={this.state.num1}
-                    num2={this.state.num2}
+                    num1={this.props.num1}
+                    num2={this.props.num2}
+                    atualizaValor={this.props.atualizaValor}
                 />
-                <Operacao />
+                <Operacao
+                    operacao={this.props.operacao}
+                    atualizarOperacao={this.props.atualizarOperacao}
+                />
                 <Comando
-                    acao={this.calcular}
+                    acao={this.props.calcular}
                 />
             </View>
         );

@@ -21,7 +21,7 @@ export default class Visor extends React.Component {
                     placeholder='Resultado'
                     editable={false}
                     style={styles.txtInput}
-                    value={this.state.resultado}
+                    value={this.props.resultado}
                 />
             </View>
         );

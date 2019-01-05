@@ -13,6 +13,13 @@ export default class Numero extends React.Component {
                 <TextInput
                     style={styles.numero}
                     value={this.props.num}
+                    onChangeText= {
+                        valorDoCampo =>
+                        this.props.atualizaValor (
+                            this.props.nome,
+                            valorDoCampo
+                        )
+                    }
                 />
             </View>
         );

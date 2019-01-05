@@ -10,7 +10,9 @@ export default class Resultado extends React.Component {
     render() {
         return (
             <View>
-                <Visor />
+                <Visor
+                    resultado={this.props.resultado}
+                />
             </View>
         );
     }

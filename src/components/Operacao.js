@@ -7,28 +7,20 @@ import {
 } from 'react-native';
 
 export default class Operacao extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            operacao: '',
-        };
-    };
-
     render() {
         return (
             <View>
                 <Picker
                     style={styles.operacao}
-                    selectedValue= {this.state.operacao}
+                    selectedValue= {this.props.operacao}
                     onValueChange= {
-                        op => {
-                            this.setState({
-                                operacao: op
-                            })
-                        }}
+                        op => {this.props.atualizarOperacao(op);}
+                    }
                 >
                     <Picker.Item label='Soma' value='soma' />
                     <Picker.Item label='Subtração' value='subtracao' />
+                    <Picker.Item label='Multiplicação' value='multiplicacao' />
+                    <Picker.Item label='Divisão' value='subtracao' />
                 </Picker>
             </View>
         );

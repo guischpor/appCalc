@@ -13,9 +13,13 @@ export default class Entrada extends React.Component {
             <View style={styles.viewContainer}>
                 <Numero
                     num={this.props.num1}
+                    atualizaValor={this.props.atualizaValor}
+                    nome='num1'
                 />
                 <Numero
                     num={this.props.num2}
+                    atualizaValor={this.props.atualizaValor}
+                    nome='num2'
                 />
             </View>
         );
